@@ -1,0 +1,102 @@
+/* =========================================
+   AURUM - GLOBAL STYLE
+========================================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #08090c;
+    color: #f5f5f5;
+}
+
+
+/* =========================================
+   CUSTOM SCROLLBAR
+========================================= */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #08090c;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #30333a;
+    border-radius: 10px;
+}
+
+
+/* =========================================
+   MARKET GLOW
+========================================= */
+
+.gold-glow {
+    box-shadow:
+        0 0 60px rgba(212, 175, 55, 0.08),
+        0 20px 80px rgba(0, 0, 0, 0.35);
+}
+
+
+/* =========================================
+   HERO BACKGROUND
+========================================= */
+
+.hero-grid {
+    background-image:
+        linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+
+    background-size: 50px 50px;
+}
+
+
+/* =========================================
+   CARD HOVER
+========================================= */
+
+.explore-card {
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        background 0.3s ease;
+}
+
+.explore-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(212, 175, 55, 0.35);
+    background: #1a1c22;
+}
+
+
+/* =========================================
+   REVEAL ANIMATION
+========================================= */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: all 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* =========================================
+   MOBILE MENU
+========================================= */
+
+.mobile-menu {
+    display: none;
+}
+
+.mobile-menu.active {
+    display: block;
+}

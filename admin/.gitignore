@@ -1,0 +1,31 @@
+
+# Konfigurasi rahasia
+.env
+.env.*
+!.env.example
+config/database.php
+config/news_config.php
+
+# File sementara
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Cache
+.cache/
+tmp/
+temp/
+
+# Dependency jika dapat dipasang kembali
+node_modules/
+vendor/
+
+# Backup database dan file backup lokal
+*.bak
+*.old
+*.zip
+
+# File database lokal
+*.sqlite
+*.db
